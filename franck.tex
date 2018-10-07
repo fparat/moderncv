@@ -61,20 +61,18 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
 \section{Engineering skills}
-%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
 \cvitem
   {Key programming skills}
   {C (bare metal), Python 2/3, VHDL (FPGA)}
 \cvitem
   {Embedded engineering}
-  {ADC, DAC, SPI, UART, I2C, timers, interrupts, HAL}
+  {UART, SPI, CAN, LIN, K-Line, I\textsuperscript{2}C, ADC, DAC, timers, interrupts, HAL}
 \cvitem
-  {Hardware skills}
+  {Hardware}
   {Debugging, usage of oscilloscope, soldering, reading of schematics and datasheets}
 \cvitem
   {Also}
@@ -82,18 +80,14 @@
 \cvitem
   {Tools}
   {Git, Subversion, Ceedling (test framework for C), Sphinx (documentation), "Unix" utilities}
-\cvitem
-  {Want to learn or improve}
-  {Embedded Linux, Real-time OS, Rust, basic web development}
 
 \section{Experience}
-%\subsection{Vocational}
 \cventry
   {2014--\the\year}
-  {Embedded Software Engineer}
+  {Automotive Testing Industry}
   {ART Logics}
   {Shanghai}
-  {}
+  {Embedded Software Engineer}
   {
     Worked on the logic implementation of key products of the company.
     \begin{itemize}%
@@ -114,8 +108,6 @@
     \item Development of a desktop application for the calibration of several products. Based on Python and Tkinter.
     \end{itemize}
   }
-%\subsection{Miscellaneous}
-%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
 \section{Education}
 \cventry
@@ -140,56 +132,14 @@
   {}
   {MPSI, PSI: Advanced Mathematics, Physics and Engineering Science}
 
-%\section{Master thesis}
-%\cvitem{title}{\emph{Title}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
 
 \section{Languages}
-\cvdoubleitem{French}{Mother tongue}{Chinese (mandarin)}{Conversational}
-\cvdoubleitem{English}{Fluent. TOEIC: 930, TOEFL: 93}{}{}
-
-%\section{Interests}
-%\cvitem{hobby 1}{Description}
-%\cvitem{hobby 2}{Description}
-%\cvitem{hobby 3}{Description}
-
-%\section{Extra 1}
-%\cvlistitem{Item 1}
-%\cvlistitem{Item 2}
-%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
-
-%\section{Extra 2}
-%\cvlistdoubleitem{Item 1}{Item 4}
-%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
-%
-%\section{References}
-%\begin{cvcolumns}
-%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-%\end{cvcolumns}
-
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\cvdoubleitem
+  {French}{Mother tongue}
+  {Chinese (mandarin)}{Conversational}
+\cvdoubleitem
+  {English}{Fluent. TOEIC: 930, TOEFL: 93}
+  {}{}
 
 
-%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
-
-
-%% end of file `template.tex'.
