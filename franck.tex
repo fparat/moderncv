@@ -25,22 +25,21 @@
 
 % personal data
 \name{Franck}{Parat}
-\title{Embedded Software Engineer}                               % optional, remove / comment the line if not wanted
-%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{+86~135~6420~1140}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\title{Embedded Software Engineer}
+%\address{street and number}{postcode city}{country}
+\phone[mobile]{+86~135~6420~1140}
 %\phone[fixed]{+2~(345)~678~901}
-%\phone[fax]{+3~(456)~789~012}
-\email{franck.parat@gmail.com}                               % optional, remove / comment the line if not wanted
-%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-%\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
-%\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
-%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
-%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
-%\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
-%\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+\email{franck.parat@gmail.com}
+%\homepage{www.johndoe.com}
+\social[linkedin]{franck-parat}
+%\social[xing]{john\_doe}
+%\social[twitter]{jdoe}
+%\social[github]{fparat}  % not much to show now
+%\social[gitlab]{jdoe}
+%\social[skype]{f.parat}  % have an account, but not using it actively
+%\extrainfo{additional information}
+\photo[64pt][0.4pt]{picture}
+%\quote{Some quote}
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -56,6 +55,9 @@
 % Adjust the font of the name and title to avoid wrap
 \renewcommand*{\namefont}{\huge\bfseries\upshape}
 \renewcommand*{\titlefont}{\LARGE\mdseries\upshape}
+
+% Date of last update in the footer
+\rfoot{\footnotesize\textcolor{color2}{\textit{Last update: \today}}}
 
 %----------------------------------------------------------------------------------
 %            content
@@ -141,5 +143,7 @@
   {English}{Fluent. TOEIC: 930, TOEFL: 93}
   {}{}
 
+%\vspace*{\fill}
+%\rightline{\textcolor{color2}{\textit{Last update: \today}}}
 
 \end{document}
