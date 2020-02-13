@@ -252,3 +252,4 @@ TSWLatexianTemp*
 
 # Others
 .vscode
+.fuse_*

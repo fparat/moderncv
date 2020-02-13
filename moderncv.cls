@@ -191,7 +191,8 @@
 % compatibility package with older versions of moderncv
 \RequirePackageWithOptions{moderncvcompatibility}
 
-\RequirePackage{l3regex}
+% no more necessary? https://github.com/xdanaux/moderncv/issues/79
+%\RequirePackage{l3regex}
 
 %-------------------------------------------------------------------------------
 %                class definition

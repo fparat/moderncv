@@ -34,9 +34,9 @@
 \social[linkedin]{franck-parat}
 %\social[xing]{john\_doe}
 %\social[twitter]{jdoe}
-%\social[github]{fparat}  % not much to show now
+\social[github]{fparat}
 %\social[gitlab]{jdoe}
-%\social[skype]{f.parat}  % have an account, but not using it actively
+\social[skype]{f.parat}
 %\extrainfo{additional information}
 \photo[64pt][0.4pt]{picture}
 %\quote{Some quote}
@@ -66,22 +66,22 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Engineering skills}
+\section{Skills}
 \cvitem
   {Key programming skills}
-  {C (bare metal), Python 2/3, VHDL (FPGA)}
+  {C (bare metal), Python 2/3, Rust, VHDL (FPGA)}
 \cvitem
   {Embedded engineering}
-  {UART, SPI, CAN, LIN, K-Line, I\textsuperscript{2}C, ADC, DAC, timers, interrupts, HAL}
+  {UART, SPI, CAN (FD), LIN, K-Line, I\textsuperscript{2}C, Ethernet, HAL, Drivers}
 \cvitem
   {Hardware}
   {Debugging, usage of oscilloscope, soldering, reading of schematics and datasheets}
 \cvitem
   {Also}
-  {C++, Assembly, Java, Javascript, Typescript (Angular), Batch, Latex}
+  {C++, Assembly, Bash, Batch, Linux, Docker, Latex}
 \cvitem
   {Tools}
-  {Git, Subversion, Ceedling (test framework for C), Sphinx (documentation), "Unix" utilities}
+  {Versionning (Git, SVN), Testing (Ceedling, pytest), Documentation (Sphinx), "Unix" utilities}
 
 \section{Experience}
 \cventry
@@ -93,20 +93,19 @@
   {
     Worked on the logic implementation of key products of the company.
     \begin{itemize}%
-    \item Maintainer of the TCU/CCU firmwares, core products of the company (SPC56, PIC24):
+    \item Maintenance of the company core products firmwares (SPC56/58 (PowerPC), PIC24):
       \begin{itemize}%
-      \item Design and implementation of new features.
-      \item Port the code to the sibling product CCU100, and the successor TCU110;
-      \item Refactoring of the code for supporting multiple products with a single codebase.
-      \item Integrated unit testing and documentation generation in the workflow.
+      \item Design, implementation, test, and documentation of new features
+      \item Refactoring of the code with a strict hardware abstraction layer in order to support more platforms
+      \item Integration of automatic unit testing and documentation generation in the workflow
       \end{itemize}
-    \item Development and maintenance of FPGA "firmwares" (Xilinx Spartan 6):
+    \item Development and maintenance of FPGA logic implementation (Xilinx Spartan 6):
       \begin{itemize}%
-      \item Bug fixes and stabilization of boards in production;
-      \item Design and development of several boards.
+      \item Bug fixes and stabilization of boards in production
+      \item Logic design and implementation for several new boards
       \end{itemize}
-    \item Design and development of smaller products based on PIC24, with LIN and UART interfaces.
-    \item Creation of a desktop application for UART or Ethernet communication. Based on Python and wxWidgets.
+    \item Firmware implementation for smaller products based on PIC24, with LIN and UART interfaces.
+    \item Creation of a GUI tool for controlling the products with UART/Ethernet. Based on Python and wxWidgets.
     \item Development of a desktop application for the calibration of several products. Based on Python and Tkinter.
     \end{itemize}
   }
@@ -115,25 +114,27 @@
 \cventry
   {2013--2014}
   {Exchange program}
-  {National University of Singapore}
+  {\href{https://en.wikipedia.org/wiki/National_University_of_Singapore}{National University of Singapore (NUS)}}
   {Singapore}
   {}
   {Exchange program for 2 semesters (Embedded Systems, Computer Science, Multimedia)}  % arguments 3 to 6 can be left empty
 \cventry
   {2011--2014}
   {Engineer degree (master level)}
-  {ENSEA}
+  {\href
+    {https://en.wikipedia.org/wiki/\%C3\%89cole_nationale_sup\%C3\%A9rieure_de_l\%27\%C3\%A9lectronique_et_de_ses_applications}
+    {École Nationale Supérieure de l'Électronique et de ses Applications (ENSEA)}
+  }
   {Cergy}
   {}
   {Graduate School of Electrical Engineering and Computer Science}
 \cventry
   {2009--2011}
   {"Classe Préparatoire aux Grandes Ecoles"}
-  {Lycee Saint-Louis}
+  {\href{https://en.wikipedia.org/wiki/Lyc\%C3\%A9e_Saint-Louis}{Lycée Saint-Louis}}
   {Paris}
   {}
   {MPSI, PSI: Advanced Mathematics, Physics and Engineering Science}
-
 
 \section{Languages}
 \cvdoubleitem
