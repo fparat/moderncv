@@ -1,0 +1,152 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{burgundy}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Franck}{Parat}
+\title{Ingénieur logiciel embarqué}
+%\address{street and number}{postcode city}{country}
+\phone[mobile]{+86~135~6420~1140}
+%\phone[fixed]{+2~(345)~678~901}
+\email{franck.parat@gmail.com}
+%\homepage{www.johndoe.com}
+\social[linkedin]{franck-parat}
+%\social[xing]{john\_doe}
+%\social[twitter]{jdoe}
+\social[github]{fparat}
+%\social[gitlab]{jdoe}
+\social[skype]{f.parat}
+%\extrainfo{additional information}
+\photo[64pt][0.4pt]{picture}
+%\quote{Some quote}
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+% Adjust the font of the name and title to avoid wrap
+\renewcommand*{\namefont}{\huge\bfseries\upshape}
+\renewcommand*{\titlefont}{\LARGE\mdseries\upshape}
+
+% Date of last update in the footer
+\rfoot{\footnotesize\textcolor{color2}{\textit{Mise à jour: \today}}}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Compétences}
+\cvitem
+  {Compétences clés}
+  {C, Python 2/3, Rust, VHDL (FPGA)}
+\cvitem
+  {Ingénierie embarquée}
+  {UART, SPI, CAN (FD), LIN, K-Line, I\textsuperscript{2}C, Ethernet, HAL, Drivers}
+\cvitem
+  {Electronique}
+  {Debug, utilisation d'un oscilloscope, soudure, analyse de circuits et specifications}
+\cvitem
+  {Autres}
+  {C++, Linux, Assembleur, Bash, Batch, Docker, Latex}
+\cvitem
+  {Outils}
+  {Git, SVN, test unitaires, documentation (Doxygen, Sphinx), outils "Unix"}
+
+\section{Expérience}
+\cventry
+  {2014--\the\year}
+  {Dévelopement de banc de test automobile}
+  {ART Logics}
+  {Shanghai}
+  {Ingénieur logiciel embarqué}
+  {
+    \begin{itemize}%
+    \item Responsable du logiciel embarqué de controleurs de test génériques. (SPC56/58 (PowerPC), PIC24)
+      \begin{itemize}%
+      \item Conception, implémentation, test, et documentations de nouvelles fonctionalités,
+      \item Refactoring général du code avec une couche d'abstraction stricte afin de réutiliser le coeur applicatif,
+      \item Ajout de tests unitaires et de géneration de documentation automatique.
+      \end{itemize}
+    \item Developpement et maintenance d'implémentations logiques pour FPGA (Xilinx Spartan 6):
+      \begin{itemize}%
+      \item Corrections de défauts et stabilisation de produits délivrés,
+      \item Conception et implémentation VHDL pour plusieurs nouveaux produits.
+      \end{itemize}
+    \item Developpement de firmware pour cartes de communication LIN et UART basées sur PIC24.
+    \item Création d'un outil pour le contrôle manuel de cartes via UART/UDP. Basée sur Python et wxWidgets.
+    \item Développement d'une application pour calibrer plusieurs modèles cartes. Basée sur Python et Tkinter.
+    \end{itemize}
+  }
+
+\section{Études}
+\cventry
+  {2013--2014}
+  {Programme d'échange universitaire}
+  {\href
+    {https://fr.wikipedia.org/wiki/Universit\%C3\%A9_nationale_de_Singapour}
+    {National University of Singapore (NUS)}
+  }
+  {Singapour}
+  {}
+  {Programme d'échange de 2 semestres (Systèmes embarqués, Informatique, Multimédia)}  % arguments 3 to 6 can be left empty
+\cventry
+  {2011--2014}
+  {Diplôme d'ingénieur (niveau master)}
+  {\href
+    {https://fr.wikipedia.org/wiki/\%C3\%89cole_nationale_sup\%C3\%A9rieure_de_l\%27\%C3\%A9lectronique_et_de_ses_applications}
+    {École Nationale Supérieure de l'Électronique et de ses Applications (ENSEA)}
+  }
+  {Cergy}
+  {}
+  {Électronique analogique et numérique, informatique, traitement du signal}
+\cventry
+  {2009--2011}
+  {Classe Préparatoire aux Grandes Ecoles}
+  {\href {https://fr.wikipedia.org/wiki/Lyc\%C3\%A9e_Saint-Louis}{Lycée Saint-Louis}}
+  {Paris}
+  {}
+  {MPSI, PSI: Mathématiques, Physique et Sciences de l'Ingénieur}
+
+\section{Langues}
+\cvdoubleitem
+  {Français}{Langue maternelle}
+  {Chinois (mandarin)}{Conversationnel}
+\cvdoubleitem
+  {Anglais}{Courant. TOEIC: 930, TOEFL: 93}
+  {}{}
+
+%\vspace*{\fill}
+%\rightline{\textcolor{color2}{\textit{Last update: \today}}}
+
+\end{document}
