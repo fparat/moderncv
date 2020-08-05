@@ -23,6 +23,8 @@
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+\usepackage[french,english]{babel}
+
 % personal data
 \name{Franck}{Parat}
 \title{Ingénieur logiciel embarqué}
@@ -57,7 +59,9 @@
 \renewcommand*{\titlefont}{\LARGE\mdseries\upshape}
 
 % Date of last update in the footer
-\rfoot{\footnotesize\textcolor{color2}{\textit{Mise à jour: \today}}}
+\rfoot{\footnotesize\textcolor{color2}{\textit{\begin{otherlanguage}{french}
+ Mise à jour: \today
+\end{otherlanguage}}}}
 
 %----------------------------------------------------------------------------------
 %            content
@@ -68,44 +72,44 @@
 
 \section{Compétences}
 \cvitem
-  {Compétences clés}
-  {C, Python 2/3, Rust, VHDL (FPGA)}
+  {Langages clés}
+  {C, Python 2/3, VHDL (FPGA)}
 \cvitem
-  {Ingénierie embarquée}
+  {Concepts embarqués}
   {UART, SPI, CAN (FD), LIN, K-Line, I\textsuperscript{2}C, Ethernet, HAL, Drivers}
 \cvitem
-  {Electronique}
-  {Debug, utilisation d'un oscilloscope, soudure, analyse de circuits et specifications}
+  {Électronique}
+  {Debug, avec multimètre/oscilloscope, soudure, analyse de de documents techniques, choix de composants périphériques}
 \cvitem
   {Autres}
-  {C++, Linux, Assembleur, Bash, Batch, Docker, Latex}
+  {Rust, C++, Linux, RTOS, Assembleur, Bash, Batch, Docker, Latex}
 \cvitem
   {Outils}
-  {Git, SVN, test unitaires, documentation (Doxygen, Sphinx), outils "Unix"}
+  {Git, SVN, tests unitaires, documentation (Doxygen, Sphinx), outils "Unix"}
 
 \section{Expérience}
 \cventry
   {2014--\the\year}
-  {Dévelopement de banc de test automobile}
+  {Secteur automobile}
   {ART Logics}
   {Shanghai}
   {Ingénieur logiciel embarqué}
   {
     \begin{itemize}%
-    \item Responsable du logiciel embarqué de controleurs de test génériques. (SPC56/58 (PowerPC), PIC24)
+    \item Responsable du logiciel embarqué d'une famille de testeurs génériques pour ECU. (SPC56/58, PIC24)
       \begin{itemize}%
-      \item Conception, implémentation, test, et documentations de nouvelles fonctionalités,
-      \item Refactoring général du code avec une couche d'abstraction stricte afin de réutiliser le coeur applicatif,
-      \item Ajout de tests unitaires et de géneration de documentation automatique.
+      \item Conception, implémentation, test, et documentation de nouvelles fonctionnalités,
+      \item Refactoring général du code avec une couche d'abstraction stricte afin de réutiliser le cœur applicatif,
+      \item Ajout de tests unitaires et de génération de documentation automatique.
       \end{itemize}
-    \item Developpement et maintenance d'implémentations logiques pour FPGA (Xilinx Spartan 6):
+    \item Développement et maintenance d'implémentations logiques pour FPGA (Xilinx Spartan 6):
       \begin{itemize}%
       \item Corrections de défauts et stabilisation de produits délivrés,
       \item Conception et implémentation VHDL pour plusieurs nouveaux produits.
       \end{itemize}
-    \item Developpement de firmware pour cartes de communication LIN et UART basées sur PIC24.
-    \item Création d'un outil pour le contrôle manuel de cartes via UART/UDP. Basée sur Python et wxWidgets.
-    \item Développement d'une application pour calibrer plusieurs modèles cartes. Basée sur Python et Tkinter.
+    \item Développement de firmware pour cartes de communication LIN et UART basées sur PIC24.
+    \item Création d'un outil pour le contrôle manuel de cartes via UART/UDP. (Python, wxWidgets)
+    \item Développement d'une application de calibration générique. (Python, Tkinter).
     \end{itemize}
   }
 
@@ -140,7 +144,7 @@
 
 \section{Langues}
 \cvdoubleitem
-  {Français}{Langue maternelle}
+  {Français}{Langue natale}
   {Chinois (mandarin)}{Conversationnel}
 \cvdoubleitem
   {Anglais}{Courant. TOEIC: 930, TOEFL: 93}
